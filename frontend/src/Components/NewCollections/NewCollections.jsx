@@ -7,8 +7,8 @@ const NewCollections = () => {
 
    const [new_collection, setNew_collection] =  useState([]);
    useEffect(() => {
-      fetch(`http://localhost:4000/newcollection`)
-      // fetch(`https://shopper-server-fawn.vercel.app/newcollection`)
+      // fetch(`http://localhost:4000/newcollection`)
+      fetch(`https://shop-dep.vercel.app/newcollection`)
       .then((response) => response.json())
       .then((data) => setNew_collection(data))
    },[])

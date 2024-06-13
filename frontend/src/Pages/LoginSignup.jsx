@@ -21,8 +21,8 @@ const LoginSignup = () => {
 
         let responseData;
 
-      await fetch('http://localhost:4000/login',{
-        // await fetch('https://shopper-server-fawn.vercel.app/login',{
+      // await fetch('http://localhost:4000/login',{
+        await fetch('https://shop-dep.vercel.app/login',{
          method: 'POST',
          headers:{
              Accept: 'application/json',
@@ -46,8 +46,8 @@ const LoginSignup = () => {
 
       let responseData;
 
-      await fetch('http://localhost:4000/signup',{
-        // await fetch('https://shopper-server-fawn.vercel.app/signup',{
+      // await fetch('http://localhost:4000/signup',{
+        await fetch('https://shop-dep.vercel.app/signup',{
          method: 'POST',
          headers:{
              Accept: 'application/json',

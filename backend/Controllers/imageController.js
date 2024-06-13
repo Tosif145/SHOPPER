@@ -5,7 +5,8 @@ const addImageToDatabase = async (file) =>{
     try {
         // Construct the filename
         const filename = `${file.fieldname}_${Date.now()}${path.extname(file.originalname)}`;
-        const imagePath = `http://localhost:4000/images/${filename}`;
+        // const imagePath = `http://localhost:4000/images/${filename}`;
+        const imagePath = `https://shop-dep.vercel.app/images/${filename}`;
         // Create a new image document using the Mongoose model
         const newImage = new Image({
             filename: filename,
