@@ -1,5 +1,8 @@
 # SHOPPER ( E-commerce web application frontend + backend)
 
+### LIVE [User Panel](https://shop-wine-tau.vercel.app/)
+### LIVE [Admin Panel](https://shop-admin-khaki.vercel.app/)
+
 ## Introduction
 Shopper is a modern e-commerce web application inspired by popular e-commerce websites. Built using the MERN stack (MongoDB, Express, React, and Node.js), it provides both front-end and back-end functionalities to offer a seamless online shopping experience. Shopper is designed for educational purposes and is an incomplete clone without any payment gateway integration. The platform supports a variety of features to facilitate easy browsing,  focusing on demonstrating the architecture and functionality of a typical e-commerce site.
 
