@@ -33,8 +33,8 @@ const AddProduct = () => {
         let formData =  new FormData();
         formData.append('product',image)
 
-        await fetch('http://localhost:4000/upload',{
-            // await fetch('https://shopper-server-fawn.vercel.app/upload',{
+        // await fetch('http://localhost:4000/upload',{
+            await fetch('https://shop-dep.vercel.app/upload',{
             method:'POST',
             headers:{
                 Accept: 'application/json'
@@ -46,8 +46,8 @@ const AddProduct = () => {
         if(responseData.success){
             product.image = responseData.image.path;
             console.log(product);
-            await fetch('http://localhost:4000/addproduct',{
-                // await fetch('https://shopper-server-fawn.vercel.app/addproduct',{
+            // await fetch('http://localhost:4000/addproduct',{
+                await fetch('https://shop-dep.vercel.app/addproduct',{
                 method:'POST',
                 headers:{
                     Accept: 'application/json',
