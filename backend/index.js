@@ -34,6 +34,9 @@ mongoose.connect(process.env.MONGODB_URI);
 // app.use('/images', express.static(path.join(__dirname, './upload/images')));
 
 // All routes here
+app.get('/', (req,res) => {
+    res.send("Server is running");
+})
 app.use('/',productRoute)
 app.use('/',uploadRoute)
 app.use('/',userRoute)
